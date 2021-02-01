@@ -42,6 +42,7 @@ const alfMorse = [
 const numAleatorio = ()=> numAleatorioEntre(0, showPontuacao.innerHTML)
 const morseAleatorio = ()=> alfMorse[numAleatorio()]
 const mostrarMorse = ()=> display.innerHTML = morseAleatorio()
+const vibrar = (ms)=> window.navigator.vibrate(ms)
 
 const certoOuErrado = (txt, timeout)=>{
   info.innerHTML = txt
@@ -52,6 +53,7 @@ const certoOuErrado = (txt, timeout)=>{
     }, timeout);
   },timeout)
 }
+
 
 // CLICK NO BOTAO
 botoes.forEach(btn => {
@@ -69,6 +71,7 @@ botoes.forEach(btn => {
     } else {
       showPontuacao.innerHTML = pontoAtt - 2
       certoOuErrado(`${alfabeto[alfMorse.indexOf(morse)]}`, 2000)
+      vibrar(200)
 
       
     }
