@@ -20,16 +20,17 @@ body{
   margin-bottom: 60px;
 }
 #botoes {
-  width: 96vw;
+  width: 100vw;
   height: 200px;
   text-align: center;
-  padding: 1px;
+  /* padding: 1px; */
   margin-top: 30px;
   padding-top: 20px;
+  margin-right: 0%;
 }
 button{
-  width: 24px;
-  height: 30px;
-  margin: 1px;
+  width: 35px;
+  height: 45px;
+  /* margin: 1px; */
   margin-bottom: 10px;
 }
